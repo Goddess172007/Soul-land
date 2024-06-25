@@ -6,7 +6,7 @@ class Config(object):
     sudo_users = "7147738922", "6574393060"
     GROUP_ID = -1002194284395
     TOKEN = "7197840791:AAHEtuE6F8mDqd3MqHjHpkrXhVP7OBd4mJc"
-    mongo_url = "://DaxxMusic6:TeamDaxx1@cluster0.ln5y16q.mongodb.net/?retryWrites=true&w=majority"
+    mongo_url = ":mongodb//DaxxMusic6:TeamDaxx1@cluster0.ln5y16q.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL = ["https://telegra.ph/file/b925c3985f0f325e62e17.jpg", "https://telegra.ph/file/4211fb191383d895dab9d.jpg"]
     SUPPORT_CHAT = "-1002194284395"
     UPDATE_CHAT = "-1002163390646"
