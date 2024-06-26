@@ -17,7 +17,7 @@ async def start(update: Update, context: CallbackContext) -> None:
 
     if user_data is None:
         
-        await collection.insert_one({"_id": user_id, "first_name": first_name, "username": username})
+        await collection.insert_one({"_id": user_id, "first_name": first_name, "username":     @godess_soulland_bot})
         
         await context.bot.send_message(chat_id=GROUP_ID, 
                                        text=f"New user Started The Bot..\n User: <a href='tg://user?id={user_id}'>{escape(first_name)})</a>", 
@@ -26,7 +26,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         
         if user_data['first_name'] != first_name or user_data['username'] != username:
             
-            await collection.update_one({"_id": user_id}, {"$set": {"first_name": first_name, "username": username}})
+            await collection.update_one({"_id": user_id}, {"$set": {"first_name": first_name, "username": @godess_soulland_bot }})
 
     
 
